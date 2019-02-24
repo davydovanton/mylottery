@@ -1,0 +1,27 @@
+main.container role="main" 
+  h1.mt-5 Pepegramming + RubyConfBy
+
+  form.mt-5
+    .form-group.row
+      label.col-sm-2.col-form-label for="inputEmail3" Имя*
+      .col-sm-10
+        input#inputEmail3.form-control placeholder="Имя"
+    .form-group.row
+      label.col-sm-2.col-form-label for="inputEmail3"  Email*
+      .col-sm-10
+        input#inputEmail3.form-control placeholder="Email" type="email"
+    .form-group.row
+      label.col-sm-2.col-form-label for="inputPassword3" Что-то еще
+      .col-sm-10
+        input#inputPassword3.form-control placeholder="Что-то еще"
+    .form-group.row
+      label.col-sm-12.col-form-label for="inputPassword3" * Обязательные поля
+    .form-group.row
+      .col-sm-10
+        = link_to 'Учавствовать', routes.registered_lottery_member_path(params[:slug]), class: 'btn btn-primary'
+
+footer.footer
+  .container
+    span.text-muted
+      | (c) 
+      a href="https://twitter.com/anton_davydov"  @anton_davydov

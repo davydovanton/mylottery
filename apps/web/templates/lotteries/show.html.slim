@@ -1,0 +1,15 @@
+main.container role="main" 
+  h1.mt-5 Pepegramming + RubyConfBy
+  p.lead Розыгрыш билетов на конференцию RubyConfBy
+  p.lead
+    = link_to 'Зарегистрироваться через ВК', routes.new_lottery_member_path(params[:slug]), class: 'btn btn-lg btn-secondary'
+  p.lead
+    = link_to 'Зарегистрироваться через ФБ', routes.new_lottery_member_path(params[:slug]), class: 'btn btn-lg btn-secondary'
+  p.lead
+    = link_to 'Зарегистрироваться через Твиттер', routes.new_lottery_member_path(params[:slug]), class: 'btn btn-lg btn-secondary'
+
+footer.footer
+  .container
+    span.text-muted
+      | (c) 
+      a href="https://twitter.com/anton_davydov"  @anton_davydov
